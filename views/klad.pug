@@ -1,0 +1,13 @@
+.latest-news.pt-150.pb-150
+            .container
+                .row
+                    .col-lg-8.offset-lg-2.text-center
+                        .section-title
+                            h3
+                                |  Contact
+                ul(style="text-align:justify;")
+
+                    each leiding in kapoenenleiding_list
+                        li
+                            a #{leiding.first_name}
+                            | (#{leiding.groep}

@@ -1,0 +1,129 @@
+// header
+#sticker.top-header-area
+   .container
+       .row
+           .col-lg-12.col-sm-12.text-center
+               .main-menu-wrap
+                   // logo
+                   .site-logo
+                       a(href='home')
+                           img(src='img/logo_scouts_grimmertinge_WIT.png', alt='')
+                   // logo
+                   // menu start
+                   nav.main-menu
+                       ul
+                           li.current-list-item
+                               a(href='home') Home
+                               //ul.sub-menu
+                                 li
+                                   a(href='index.html') Static Home
+                                 li
+                                   a(href='index_2.html') Slider Home
+                           // li
+                             a(href='about.html') About
+                               // // er in volgende lijnen geen .pug staan
+                               // als er geen # staat dan moeten we dus ook nog de andere maken
+                           li
+                               a(href='takkenwerking') Werking
+                               ul.sub-menu
+                                   li
+                                       a(href='takkenwerking') Takkenwerking
+                                   li
+                                       a(href='inschrijven') Inschrijven
+                                   li
+                                       a(href='uniform') Uniform
+                                   li
+                                       a(href='oudercomite') Oudercomité
+                           li
+                               a(href='programma_kapoenen') Programmaboekje
+                               ul.sub-menu
+                                   li
+                                       a(href='programma_kapoenen') Kapoenen
+                                   li
+                                       a(href='programma_kabouters') Kabouters
+                                   li
+                                       a(href='programma_jonggidsen') Jonggidsen
+                                   li
+                                       a(href='programma_gidsen') Gidsen
+                           li
+                               a(href='verhuur') Verhuur
+                           li
+                               a(href='groepsleiding') Contact
+                               ul.sub-menu
+                                   li
+                                       a(href='groepsleiding') Groepsleiding
+                                   li
+                                       a(href='kapoenenleiding') Kapoenenleiding
+                                   li
+                                       a(href='kabouterleiding') Kabouterleiding
+                                   li
+                                       a(href='jonggidsenleiding') Jonggidsenleiding
+                                   li
+                                       a(href='gidsenleiding') Gidsenleiding
+                           li
+                               .header-icons
+                                   //a.client-avater
+                                       #id01.modal
+                                           span.close(onclick="document.getElementById('id01').style.display='none'" title='Close Modal') ×
+                                           form#login.form
+                                               h1.form__title Login
+                                               .form__message.form__message--error
+                                               .form__input-group
+                                                   input.form__input(type='text' autofocus='' placeholder='Username or email')
+                                                   .form__input-error-message
+                                               .form__input-group
+                                                   input.form__input(type='password' autofocus='' placeholder='Password')
+                                                   .form__input-error-message
+                                               button.form__button(type='submit') Continue
+                                               p.form__text
+                                                   a.form__link(href='#') Forgot your password?
+                                               p.form__text
+                                                   a#linkCreateAccount.form__link(href='./') Don't have an account? Create account
+                                           form#createAccount.form.form--hidden
+                                               h1.form__title Create Account
+                                               .form__message.form__message--error
+                                               .form__input-group
+                                                   input#signupUsername.form__input(type='text' autofocus='' placeholder='Username')
+                                                   .form__input-error-message
+                                               .form__input-group
+                                                   input.form__input(type='text' autofocus='' placeholder='Email Address')
+                                                   .form__input-error-message
+                                               .form__input-group
+                                                   input.form__input(type='password' autofocus='' placeholder='Password')
+                                                   .form__input-error-message
+                                               .form__input-group
+                                                   input.form__input(type='password' autofocus='' placeholder='Confirm password')
+                                                   .form__input-error-message
+                                               button.form__button(type='submit') Continue
+                                               p.form__text
+                                                   a#linkLogin.form__link(href='./') Already have an account? Sign in
+
+                                   a.shopping-cart(onclick="document.getElementById('id01').style.display='block'") Login
+                                       #id01.modal
+                                           span.close(onclick="document.getElementById('id01').style.display='none'" title='Close Modal') ×
+                                           // Modal Content
+                                           form.modal-content.animate(action='/action_page.php')
+                                               .container
+                                                   label(for='uname')
+                                                       b Inlognaam
+                                                   input#uname(type='text' placeholder='Enter Username' name='uname' required='')
+                                                   label(for='psw')
+                                                       b Wachtwoord
+                                                   input#psw(type='password' placeholder='Enter Password' name='psw' required='')
+                                                   button(type='submit') Login
+                                                   label
+                                                       input(type='checkbox' checked='checked' name='remember')
+                                                       |  Onthoud mij
+                                               .container(style='background-color:#f1f1f1')
+                                                   button.cancelbtn(type='button' onclick="document.getElementById('id01').style.display='none'") Cancel
+                                                   span.psw
+                                                       | Wachtwoord Vergeten?
+                                                       a(href='#') Wachtwoord?
+
+                                   a.mobile-hide.search-bar-icon(href='#')
+                                       i.fas.fa-arrow-up
+                   a.mobile-show.search-bar-icon(href='#')
+                       i.fas.fa-search
+                   .mobile-menu
+                   // menu end
+       // end header

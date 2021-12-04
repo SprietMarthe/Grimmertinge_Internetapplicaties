@@ -1,0 +1,321 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='description' content='Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/')
+    // title
+    title Single Product
+    // favicon
+    link(rel='shortcut icon' type='image/png' href='assets/img/favicon.png')
+    // google font
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap' rel='stylesheet')
+    // fontawesome
+    link(rel='stylesheet' href='assets/css/all.min.css')
+    // bootstrap
+    link(rel='stylesheet' href='assets/bootstrap/css/bootstrap.min.css')
+    // owl carousel
+    link(rel='stylesheet' href='assets/css/owl.carousel.css')
+    // magnific popup
+    link(rel='stylesheet' href='assets/css/magnific-popup.css')
+    // animate css
+    link(rel='stylesheet' href='assets/css/animate.css')
+    // mean menu css
+    link(rel='stylesheet' href='assets/css/meanmenu.min.css')
+    // main style
+    link(rel='stylesheet' href='assets/css/main.css')
+    // responsive
+    link(rel='stylesheet' href='assets/css/responsive.css')
+// PreLoader
+.loader
+    .loader-inner
+        .circle
+// PreLoader Ends
+// header
+#sticker.top-header-area
+    .container
+        .row
+            .col-lg-12.col-sm-12.text-center
+                .main-menu-wrap
+                    // logo
+                    .site-logo
+                        a(href='index.html')
+                            img(src='assets/img/logo.png' alt='')
+                    // logo
+                    // menu start
+                    nav.main-menu
+                        ul
+                            li.current-list-item
+                                a(href='#') Home
+                                ul.sub-menu
+                                    li
+                                        a(href='index.html') Static Home
+                                    li
+                                        a(href='index_2.html') Slider Home
+                            li
+                                a(href='about.html') About
+                            li
+                                a(href='#') Pages
+                                ul.sub-menu
+                                    li
+                                        a(href='404.html') 404 page
+                                    li
+                                        a(href='about.html') About
+                                    li
+                                        a(href='cart.html') Cart
+                                    li
+                                        a(href='checkout.html') Check Out
+                                    li
+                                        a(href='contact.html') Contact
+                                    li
+                                        a(href='news.html') News
+                                    li
+                                        a(href='shop.html') Shop
+                            li
+                                a(href='news.html') News
+                                ul.sub-menu
+                                    li
+                                        a(href='news.html') News
+                                    li
+                                        a(href='single-news.html') Single News
+                            li
+                                a(href='contact.html') Contact
+                            li
+                                a(href='shop.html') Shop
+                                ul.sub-menu
+                                    li
+                                        a(href='shop.html') Shop
+                                    li
+                                        a(href='checkout.html') Check Out
+                                    li
+                                        a(href='single-product.html') Single Product
+                                    li
+                                        a(href='cart.html') Cart
+                            li
+                                .header-icons
+                                    a.shopping-cart(href='cart.html')
+                                        i.fas.fa-shopping-cart
+                                    a.mobile-hide.search-bar-icon(href='#')
+                                        i.fas.fa-search
+                    a.mobile-show.search-bar-icon(href='#')
+                        i.fas.fa-search
+                    .mobile-menu
+                    // menu end
+// end header
+// search area
+.search-area
+    .container
+        .row
+            .col-lg-12
+                span.close-btn
+                    i.fas.fa-window-close
+                .search-bar
+                    .search-bar-tablecell
+                        h3 Search For:
+                        input(type='text' placeholder='Keywords')
+                        button(type='submit')
+                            | Search
+                            i.fas.fa-search
+// end search arewa
+// breadcrumb-section
+.breadcrumb-section.breadcrumb-bg
+    .container
+        .row
+            .col-lg-8.offset-lg-2.text-center
+                .breadcrumb-text
+                    p See more Details
+                    h1 Single Product
+// end breadcrumb section
+// single product
+.single-product.mt-150.mb-150
+    .container
+        .row
+            .col-md-5
+                .single-product-img
+                    img(src='assets/img/products/product-img-5.jpg' alt='')
+            .col-md-7
+                .single-product-content
+                    h3 Green apples have polyphenols
+                    p.single-product-pricing
+                        span Per Kg
+                        |  $50
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.
+                    .single-product-form
+                        form(action='index.html')
+                            input(type='number' placeholder='0')
+                        a.cart-btn(href='cart.html')
+                            i.fas.fa-shopping-cart
+                            |  Add to Cart
+                        p
+                            strong Categories:
+                            | Fruits, Organic
+                    h4 Share:
+                    ul.product-share
+                        li
+                            a(href='')
+                                i.fab.fa-facebook-f
+                        li
+                            a(href='')
+                                i.fab.fa-twitter
+                        li
+                            a(href='')
+                                i.fab.fa-google-plus-g
+                        li
+                            a(href='')
+                                i.fab.fa-linkedin
+// end single product
+// more products
+.more-products.mb-150
+    .container
+        .row
+            .col-lg-8.offset-lg-2.text-center
+                .section-title
+                    h3
+                        span.orange-text Related
+                        |  Products
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.
+        .row
+            .col-lg-4.col-md-6.text-center
+                .single-product-item
+                    .product-image
+                        a(href='single-product.html')
+                            img(src='assets/img/products/product-img-1.jpg' alt='')
+                    h3 Strawberry
+                    p.product-price
+                        span Per Kg
+                        |  85$
+                    a.cart-btn(href='cart.html')
+                        i.fas.fa-shopping-cart
+                        |  Add to Cart
+            .col-lg-4.col-md-6.text-center
+                .single-product-item
+                    .product-image
+                        a(href='single-product.html')
+                            img(src='assets/img/products/product-img-2.jpg' alt='')
+                    h3 Berry
+                    p.product-price
+                        span Per Kg
+                        |  70$
+                    a.cart-btn(href='cart.html')
+                        i.fas.fa-shopping-cart
+                        |  Add to Cart
+            .col-lg-4.col-md-6.offset-lg-0.offset-md-3.text-center
+                .single-product-item
+                    .product-image
+                        a(href='single-product.html')
+                            img(src='assets/img/products/product-img-3.jpg' alt='')
+                    h3 Lemon
+                    p.product-price
+                        span Per Kg
+                        |  35$
+                    a.cart-btn(href='cart.html')
+                        i.fas.fa-shopping-cart
+                        |  Add to Cart
+// end more products
+// logo carousel
+.logo-carousel-section
+    .container
+        .row
+            .col-lg-12
+                .logo-carousel-inner
+                    .single-logo-item
+                        img(src='assets/img/company-logos/1.png' alt='')
+                    .single-logo-item
+                        img(src='assets/img/company-logos/2.png' alt='')
+                    .single-logo-item
+                        img(src='assets/img/company-logos/3.png' alt='')
+                    .single-logo-item
+                        img(src='assets/img/company-logos/4.png' alt='')
+                    .single-logo-item
+                        img(src='assets/img/company-logos/5.png' alt='')
+// end logo carousel
+// footer
+.footer-area
+    .container
+        .row
+            .col-lg-3.col-md-6
+                .footer-box.about-widget
+                    h2.widget-title About us
+                    p
+                        | Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+            .col-lg-3.col-md-6
+                .footer-box.get-in-touch
+                    h2.widget-title Get in Touch
+                    ul
+                        li 34/8, East Hukupara, Gifirtok, Sadan.
+                        li support@fruitkha.com
+                        li +00 111 222 3333
+            .col-lg-3.col-md-6
+                .footer-box.pages
+                    h2.widget-title Pages
+                    ul
+                        li
+                            a(href='index.html') Home
+                        li
+                            a(href='about.html') About
+                        li
+                            a(href='services.html') Shop
+                        li
+                            a(href='news.html') News
+                        li
+                            a(href='contact.html') Contact
+            .col-lg-3.col-md-6
+                .footer-box.subscribe
+                    h2.widget-title Subscribe
+                    p Subscribe to our mailing list to get the latest updates.
+                    form(action='index.html')
+                        input(type='email' placeholder='Email')
+                        button(type='submit')
+                            i.fas.fa-paper-plane
+// end footer
+// copyright
+.copyright
+    .container
+        .row
+            .col-lg-6.col-md-12
+                p
+                    | Copyrights &copy; 2019 -
+                    a(href='https://imransdesign.com/') Imran Hossain
+                    | ,  All Rights Reserved.
+            .col-lg-6.text-right.col-md-12
+                .social-icons
+                    ul
+                        li
+                            a(href='#' target='_blank')
+                                i.fab.fa-facebook-f
+                        li
+                            a(href='#' target='_blank')
+                                i.fab.fa-twitter
+                        li
+                            a(href='#' target='_blank')
+                                i.fab.fa-instagram
+                        li
+                            a(href='#' target='_blank')
+                                i.fab.fa-linkedin
+                        li
+                            a(href='#' target='_blank')
+                                i.fab.fa-dribbble
+// end copyright
+// jquery
+script(src='assets/js/jquery-1.11.3.min.js')
+// bootstrap
+script(src='assets/bootstrap/js/bootstrap.min.js')
+// count down
+script(src='assets/js/jquery.countdown.js')
+// isotope
+script(src='assets/js/jquery.isotope-3.0.6.min.js')
+// waypoints
+script(src='assets/js/waypoints.js')
+// owl carousel
+script(src='assets/js/owl.carousel.min.js')
+// magnific popup
+script(src='assets/js/jquery.magnific-popup.min.js')
+// mean menu
+script(src='assets/js/jquery.meanmenu.min.js')
+// sticker js
+script(src='assets/js/sticker.js')
+// main js
+script(src='assets/js/main.js')
